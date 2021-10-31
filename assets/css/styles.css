@@ -61,6 +61,7 @@ body{
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   color: var(--second-color);
+  /* background-color: rgb(41, 41, 44); */
   
 }
 h1,h2,p{
@@ -228,7 +229,28 @@ img{
   /* border-radius: 50%; */
 }
 
+span.typed-text {
+  font-weight: 100;
+  color:rgb(202, 189, 169);
 
+}
+span.cursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+span.cursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  0%  { background-color: #ccc; }
+  49% { background-color: #ccc; }
+  50% { background-color: transparent; }
+  99% { background-color: transparent; }
+  100%  { background-color: #ccc; }
+}
 /*BUTTONS*/
 .button{
   display: inline-block;
