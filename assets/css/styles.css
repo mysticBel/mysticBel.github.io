@@ -279,6 +279,7 @@ span.cursor.typing {
 .about__subtitle{
   margin-bottom: var(--mb-2);
 }
+
 .about__img{
   justify-self: center;
 }
@@ -339,6 +340,43 @@ span.cursor.typing {
 .skills__ux{
   width: 65%;
 }
+
+.skills__git{
+  width: 85%;
+}
+
+.skills__angular{
+  width: 60%;
+}
+
+.skills__react{
+  width: 50%;
+}
+
+.skills__bs{
+  width: 85%;
+}
+
+.skills__sass{
+  width: 65%;
+}
+
+.skills__node{
+  width: 70%;
+}
+
+.skills__npm{
+  width: 85%;
+}
+
+.skills__firebase{
+  width: 65%;
+}
+
+.skills__python{
+  width: 25%;
+}
+
 .skills__img{
   border-radius: .5rem;
 }
@@ -379,6 +417,29 @@ span.cursor.typing {
   cursor: pointer;
   margin-left: auto;
 }
+
+.contact__icon{
+  width: max-content;
+  margin-bottom: var(--mb-2);
+  font-size: 60px;
+  color: var(--second-color);
+  cursor: pointer; 
+}
+
+.contact__icon i:hover{
+  transition:1s;
+  transform: scale(1.3);  
+}
+
+.contact__img{
+  height:250px;
+  
+}
+.contact__img img{
+  transition: 1s;
+  cursor: pointer;
+}
+
 
 /* ===== FOOTER =====*/
 .footer{
