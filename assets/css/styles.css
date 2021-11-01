@@ -463,6 +463,21 @@ span.cursor.typing {
 }
 
 /* ===== MEDIA QUERIES=====*/
+@media screen and (min-width: 150px){
+  .contact__form{
+    width: 360px;
+  }
+  .contact__container{
+    justify-items: center;
+  }
+  .home__img{
+    width: 170px;
+    bottom: 20%;
+    margin-right: 40px;
+  }
+
+}
+
 @media screen and (min-width: 768px){
   body{
     margin: 0;
@@ -533,7 +548,7 @@ span.cursor.typing {
     column-gap: 2rem;
   }
   .contact__form{
-    width: 700px;
+    width: 360px;
   }
   .contact__container{
     justify-items: center;
