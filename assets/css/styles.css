@@ -106,6 +106,16 @@ img{
   padding-bottom: 2rem;
 }
 
+.section-subtitle{
+  position: relative;
+  font-size: var(--normal-font-size);
+  font-family: var(--body-font);
+  color: var(--second-color);
+  margin-top: var(--mb-1);
+  margin-bottom: var(--mb-1);
+  text-align: center;
+}
+
 /*===== LAYOUT =====*/
 .bd-grid{
   max-width: 1024px;
@@ -136,6 +146,7 @@ img{
   justify-content: space-between;
   align-items: center;
   font-weight: var(--font-semi);
+  
 }
 @media screen and (max-width: 768px){
   .nav__menu{
@@ -398,6 +409,68 @@ span.cursor.typing {
   transform: scale(1.1);
 }
 
+
+/* ===== MODAL ======*/
+
+.modal{
+  background-color: rgba(0,0,0,.8);
+  position:fixed;
+  z-index: 2;
+  top: 0;
+  right:0;
+  bottom:0;
+  left:0;
+  opacity:0;
+  pointer-events:none;
+  transition: all 1s;
+}
+
+.modal-container{
+  background-color: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin: auto;
+  margin-top: 40%; 
+  position: relative;
+  width:400px;
+  text-align: center;
+}
+
+.modal-container > span{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.repository {
+  color: var(--second-color);
+}
+
+.close{
+  cursor:pointer;
+  color: var(--first-color);
+  font-size: 1.7rem;
+}
+
+.modal-container img {
+  margin: auto;
+}
+
+.demo {
+  color: var(--first-color);
+  font-weight: bold;
+}
+
+#dailyMoodModal:target, #mdlinksModal:target, 
+#api-nodeModal:target, #SkyyModal:target ,
+ #pokedexModal:target{
+  opacity:1;
+  pointer-events:auto;
+}
+.modal-icon{
+  font-size: 1.75rem;
+}
+
+
 /* ===== CONTACT =====*/
 .contact__input{
   width: 100%;
@@ -471,11 +544,22 @@ span.cursor.typing {
     justify-items: center;
   }
   .home__img{
-    width: 170px;
-    bottom: 20%;
-    margin-right: 40px;
+    width: 160px;
+    bottom: 10%;
+    margin-right: 20px;
+  }
+  .modal-container{
+    width: 200px;
+    margin-top: 30%;
   }
 
+}
+
+@media screen and (min-width: 300px){
+  .modal-container{
+    width: 300px;
+    margin-top: 20%;
+  }
 }
 
 @media screen and (min-width: 768px){
@@ -553,6 +637,10 @@ span.cursor.typing {
   .contact__container{
     justify-items: center;
   }
+  .modal-container{
+    width: 600px;
+    margin-top: 10%;
+  }
 }
 
 @media screen and (min-width: 1024px){
@@ -562,5 +650,8 @@ span.cursor.typing {
   }
   .home__img{
     right: 10%;
+  }
+  .modal-container{
+    margin-top: 6%; 
   }
 }
