@@ -552,6 +552,7 @@ span.cursor.typing {
     width: 200px;
     margin-top: 30%;
   }
+ 
 
 }
 
@@ -560,6 +561,20 @@ span.cursor.typing {
     width: 300px;
     margin-top: 20%;
   }
+
+
+}
+
+@media screen and (max-width: 400px){
+  .modal-container img{
+    display: none;
+  }
+
+ .modal-container p{
+   font-size:0.8rem;
+  }
+  
+
 }
 
 @media screen and (min-width: 768px){
@@ -641,6 +656,7 @@ span.cursor.typing {
     width: 600px;
     margin-top: 10%;
   }
+ 
 }
 
 @media screen and (min-width: 1024px){
@@ -654,4 +670,5 @@ span.cursor.typing {
   .modal-container{
     margin-top: 6%; 
   }
+ 
 }
