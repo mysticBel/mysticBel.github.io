@@ -12,7 +12,8 @@
   /* --first-color: #96b0dfe1; */
   /* --first-color: #6d5ea5e1;  */
   --first-color: #68414191; 
-  --second-color: #63beb9dc;
+  --second-color: #78c0c0e3;
+  /* --second-color: #63beb9dc; */
   /* --second-color: #0E2431; */
 }
 
@@ -75,7 +76,7 @@ ul{
 a{
   text-decoration: none;
 }
-img{
+img {
   max-width: 100%;
   height: auto;
   display: block;
@@ -349,7 +350,7 @@ span.cursor.typing {
   width: 70%;
 }
 .skills__ux{
-  width: 65%;
+  width: 80%;
 }
 
 .skills__git{
@@ -357,7 +358,7 @@ span.cursor.typing {
 }
 
 .skills__angular{
-  width: 60%;
+  width: 30%;
 }
 
 .skills__react{
@@ -369,7 +370,7 @@ span.cursor.typing {
 }
 
 .skills__sass{
-  width: 65%;
+  width: 50%;
 }
 
 .skills__node{
@@ -381,11 +382,11 @@ span.cursor.typing {
 }
 
 .skills__firebase{
-  width: 65%;
+  width: 70%;
 }
 
 .skills__python{
-  width: 25%;
+  width: 15%;
 }
 
 .skills__img{
@@ -460,7 +461,7 @@ span.cursor.typing {
   font-weight: bold;
 }
 
-#dailyMoodModal:target, #mdlinksModal:target, 
+#labnotesModal:target,#dailyMoodModal:target, #mdlinksModal:target, 
 #api-nodeModal:target, #SkyyModal:target ,
  #pokedexModal:target{
   opacity:1;
