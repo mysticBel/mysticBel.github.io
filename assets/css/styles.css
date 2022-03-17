@@ -8,11 +8,15 @@
 
 /*===== Colors =====*/
 :root{
+  /* --first-color: #68414191; 
+  --second-color: #78c0c0e3; */
+
+
   /* --first-color: #ffd95ce8; */
   /* --first-color: #96b0dfe1; */
   /* --first-color: #6d5ea5e1;  */
-  --first-color: #68414191; 
-  --second-color: #78c0c0e3;
+  --first-color: #51a1cf91; 
+  --second-color: #9990c2;
   /* --second-color: #63beb9dc; */
   /* --second-color: #0E2431; */
 }
@@ -62,7 +66,7 @@ body{
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   color: var(--second-color);
-  /* background-color: rgb(41, 41, 44); */
+  /* background-color: rgba(145, 143, 146, 0.65); */
   
 }
 h1,h2,p{
@@ -127,7 +131,7 @@ img {
   margin-left: var(--mb-2);
   margin-right: var(--mb-2);
 }
-.l-header{
+.l-header{ 
   width: 100%;
   position: fixed;
   top: 0;
@@ -135,9 +139,11 @@ img {
   z-index: var(--z-fixed);
   /* background-color: rgba(239, 228, 250, 0.747); */
   /* background-color: rgba(231, 252, 250, 0.747); */
-  background-color: rgba(240, 237, 216, 0.801);
+ 
   /* background-color: rgba(228, 221, 173, 0.377); */
   box-shadow: 0 1px 4px rgba(146,161,176,.15);
+  /* background-color: rgba(240, 237, 216, 0.801); this*/
+  background-color: rgba(196, 237, 245, 0.822);
 }
 
 /*===== NAV =====*/
@@ -238,12 +244,15 @@ img {
   right: 0;
   bottom: 0;
   width: 295px;
-  /* border-radius: 50%; */
+  
+}
+.home__img__photo{
+border-radius: 50%;
 }
 
 span.typed-text {
   font-weight: 100;
-  color:rgb(202, 189, 169);
+  color:rgba(69, 98, 192, 0.308);
 
 }
 span.cursor {
@@ -517,7 +526,8 @@ span.cursor.typing {
 
 /* ===== FOOTER =====*/
 .footer{
-  background-color: var(--first-color);
+  /* background-color: var(--first-color); */
+  background-color:rgba(49, 50, 105, 0.596) ;
   color: #fff;
   text-align: center;
   font-weight: var(--font-semi);
@@ -545,9 +555,9 @@ span.cursor.typing {
     justify-items: center;
   }
   .home__img{
-    width: 160px;
-    bottom: 10%;
-    margin-right: 20px;
+    width: 220px;
+    bottom: 5%;
+    margin-right: 15px;
   }
   .modal-container{
     width: 200px;
@@ -631,7 +641,7 @@ span.cursor.typing {
   .home__img{
     width: 300px;
     bottom: 25%;
-    margin-right: 250px;
+    margin-right: 80px;
   }
 
   .about__container, .skills__container{
@@ -666,10 +676,16 @@ span.cursor.typing {
     margin-right: auto;
   }
   .home__img{
-    right: 10%;
+    right: 15%;
   }
   .modal-container{
     margin-top: 6%; 
   }
  
+}
+
+@media screen and (max-width: 1824px){
+  .home__img{
+    right: 5%;
+  }
 }
