@@ -15,7 +15,7 @@
   /* --first-color: #ffd95ce8; */
   /* --first-color: #96b0dfe1; */
   /* --first-color: #6d5ea5e1;  */
-  --first-color: #51a1cf91; 
+  --first-color: rgba(109, 165, 192, 0.644);  /*#51a1cf91  */
   --second-color: #9990c2;
   /* --second-color: #63beb9dc; */
   /* --second-color: #0E2431; */
@@ -142,8 +142,9 @@ img {
  
   /* background-color: rgba(228, 221, 173, 0.377); */
   box-shadow: 0 1px 4px rgba(146,161,176,.15);
-  /* background-color: rgba(240, 237, 216, 0.801); this*/
-  background-color: rgba(196, 237, 245, 0.822);
+   /* background-color: rgba(240, 237, 216, 0.801);  */
+   background-color: rgba(218, 240, 236, 0.896);  
+ /* background-color: rgba(196, 237, 245, 0.822);this*/
 }
 
 /*===== NAV =====*/
